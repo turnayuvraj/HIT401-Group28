@@ -1,0 +1,5 @@
+Method,Accuracy (%)
+Threshold,15.88
+SVM,76.91
+Random Forest,90.94
+CNN,95.82
