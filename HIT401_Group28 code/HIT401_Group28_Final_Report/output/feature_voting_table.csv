@@ -1,0 +1,13 @@
+voted_rank,feature,lasso_%,lasso_rank,relieff_rank,total,top5_votes
+1,std,35.11,1,1,2,2
+2,rms,27.46,2,2,4,2
+3,energy,12.28,3,3,6,2
+4,min,4.57,5,5,10,2
+5,mean_abs_diff,4.92,4,7,11,1
+6,peak_to_peak,2.84,8,4,12,1
+7,max,3.86,6,8,14,0
+8,mean,1.93,10,6,16,0
+9,zero_crossing_count,3.7,7,10,17,0
+10,kurtosis,2.37,9,11,20,0
+11,skewness,0.56,11,9,20,0
+12,median,0.39,12,12,24,0

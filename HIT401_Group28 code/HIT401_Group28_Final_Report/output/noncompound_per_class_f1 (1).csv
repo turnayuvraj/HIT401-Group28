@@ -1,0 +1,10 @@
+class,RF F1,SVM F1,CNN F1
+Flicker,1.0,0.9756,0.9975
+Harmonics,1.0,0.9703,0.995
+Interruption,0.9901,0.9777,0.9876
+Notch,0.9521,0.9299,0.9825
+Oscillatory_Transient,0.9648,0.9149,0.9418
+Pure_Sinusoidal,0.9975,0.8529,0.9926
+Sag,0.9899,0.972,0.9848
+Swell,0.9975,0.9583,0.995
+Transient,0.9531,0.7872,0.9524

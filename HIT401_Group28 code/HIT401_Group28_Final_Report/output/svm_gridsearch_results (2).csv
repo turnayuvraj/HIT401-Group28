@@ -1,0 +1,3 @@
+variant,best_params,accuracy,non_compound_f1,compound_f1,gap
+"Untuned SVM (C=10, gamma=scale)","C=10, gamma=scale",76.9118,0.8374,0.687,0.1504
+Tuned SVM,"{'C': 500, 'gamma': 'scale'}",83.9118,0.9121,0.7534,0.1587

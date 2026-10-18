@@ -1,0 +1,9 @@
+features,n_features,model,test_accuracy,non_compound_f1,compound_f1,gap,feature_list
+All 12,12,Random Forest,90.94,0.9749,0.8357,0.1392,"mean, std, min, max, peak_to_peak, rms, skewness, kurtosis, energy, zero_crossing_count, mean_abs_diff, median"
+All 12,12,SVM,76.91,0.8374,0.687,0.1504,"mean, std, min, max, peak_to_peak, rms, skewness, kurtosis, energy, zero_crossing_count, mean_abs_diff, median"
+Voted top 7,7,Random Forest,81.29,0.9051,0.7065,0.1986,"std, min, max, peak_to_peak, rms, energy, mean_abs_diff"
+Voted top 7,7,SVM,68.71,0.7748,0.5736,0.2012,"std, min, max, peak_to_peak, rms, energy, mean_abs_diff"
+Voted top 5,5,Random Forest,74.12,0.8618,0.5988,0.263,"std, min, rms, energy, mean_abs_diff"
+Voted top 5,5,SVM,65.32,0.7496,0.5229,0.2267,"std, min, rms, energy, mean_abs_diff"
+Voted top 3,3,Random Forest,39.85,0.5598,0.1982,0.3616,"std, rms, energy"
+Voted top 3,3,SVM,39.47,0.4488,0.1675,0.2813,"std, rms, energy"

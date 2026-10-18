@@ -1,0 +1,3 @@
+group,rf_acc,rf_f1,svm_acc,svm_f1,cnn_acc,cnn_f1
+Non-compound (9 classes),98.28,0.9828,92.61,0.9265,98.11,0.981
+Compound (8 classes),83.38,0.8346,72.31,0.7249,96.56,0.9656
