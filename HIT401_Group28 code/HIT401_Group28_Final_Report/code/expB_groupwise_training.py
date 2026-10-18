@@ -1,13 +1,7 @@
 # Experiment 4 - Train separate models for non-compound and compound classes
 # HIT401 Capstone - Group 28
 # This version includes CNN as well as Random Forest and SVM
-#
-# Our supervisor told us to train on non-compound classes first,
-# see how it predicts, then do the same for compound classes.
-# This helps us understand how each model handles each group on its own.
-#
-# Run PQD_Code.py first before running this
-# Use T4 GPU for faster CNN training
+
 
 import numpy as np
 import pandas as pd
