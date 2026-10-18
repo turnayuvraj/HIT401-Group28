@@ -1,23 +1,13 @@
 """
-Feature voting experiment (supervisor suggestion, 9 Oct meeting)
+Experiment C: feature selection by voting.
 
-Two feature-ranking methods "vote" on which of the 12 features matter most:
-  1. Lasso   - LassoCV run once per class (one-vs-rest, 17 runs),
-               exactly as in our lasso_feature_selection.py
-  2. ReliefF - our from-scratch ReliefF (2,000 random training signals,
-               10 nearest matches), exactly as in relieff_comparison.py
-Each method ranks the features (1 = best). We add the two ranks; the
-lowest total is the most agreed-on feature. Ties are broken by Lasso rank.
-Both are fitted on the TRAINING set only. Neither is one of our
-classifiers, so the features are not chosen by the model being tested.
+Lasso (one-vs-rest, 17 runs) and ReliefF (2,000 training signals,
+10 nearest neighbours) each rank the 12 features; the two ranks are
+added and ties are broken by the Lasso rank. Both are fitted on the
+training set only. RF and SVM are then tested on the 20% test set
+with all 12 features and the voted top 7, 5 and 3.
 
-Then RF and SVM are tested on the unseen 20% test set using:
-all 12, voted top 7, voted top 5, voted top 3.
-
-STANDALONE: upload the 17 class CSVs into Colab, then paste this whole
-file into ONE cell and run it.
-It loads the data, builds the 12 features and makes the same 80/20 split
-as PQD_Code.py. No CNN is trained and nothing extra needs installing.
+Standalone: put the 17 SEED CSV files in DATA_DIR and run.
 """
 
 import os, glob, warnings
